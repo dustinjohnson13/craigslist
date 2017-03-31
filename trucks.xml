@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:enc="http://purl.oclc.org/net/rss_2.0/enc#"
+ xmlns:ev="http://purl.org/rss/1.0/modules/event/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="https://omaha.craigslist.org/search/cto?auto_bodytype=7&#x26;auto_bodytype=9&#x26;format=rss&#x26;max_auto_miles=130000&#x26;max_price=10000&#x26;min_auto_year=2002&#x26;min_price=0&#x26;postal=68118&#x26;search_distance=30">
+<title>craigslist omaha | cars &#x26; trucks - by owner search </title>
+<link>https://omaha.craigslist.org/search/cto?auto_bodytype=7&#x26;auto_bodytype=9&#x26;max_auto_miles=130000&#x26;max_price=10000&#x26;min_auto_year=2002&#x26;min_price=0&#x26;postal=68118&#x26;search_distance=30</link>
+<description></description>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:publisher>robot@craigslist.org</dc:publisher>
+<dc:creator>robot@craigslist.org</dc:creator>
+<dc:source>https://omaha.craigslist.org/search/cto?auto_bodytype=7&#x26;auto_bodytype=9&#x26;format=rss&#x26;max_auto_miles=130000&#x26;max_price=10000&#x26;min_auto_year=2002&#x26;min_price=0&#x26;postal=68118&#x26;search_distance=30</dc:source>
+<dc:title>craigslist omaha | cars &#x26; trucks - by owner search </dc:title>
+<dc:type>Collection</dc:type>
+<syn:updateBase>2017-03-30T16:49:31-05:00</syn:updateBase>
+<syn:updateFrequency>6</syn:updateFrequency>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6066997352.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6063076670.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6066024467.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6044065157.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6064439089.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6064173625.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6059827337.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6046327486.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6063279956.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6045151121.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6060415071.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6051081817.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6059354885.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6046316646.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6048266126.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6054007179.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6051375941.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6046382568.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6045499755.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6006466947.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6037749352.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6036404127.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6026997192.html" />
+  <rdf:li rdf:resource="http://omaha.craigslist.org/cto/6028632073.html" />
+ </rdf:Seq>
+</items>
+</channel>
+<item rdf:about="http://omaha.craigslist.org/cto/6066997352.html">
+<title><![CDATA[2008 Tahoe Hybrid-Fully Loaded (Omaha) &#x0024;6500]]></title>
+<link>http://omaha.craigslist.org/cto/6066997352.html</link>
+<description><![CDATA[Fully loaded 2008 Chevy Tahoe hybrid with 128,000 miles. Includes DVD entertainment system leather and heated seats with third row backseat. Maroon with black leather interior and wood trim.]]></description>
+<dc:date>2017-03-30T14:38:16-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6066997352.html</dc:source>
+<dc:title><![CDATA[2008 Tahoe Hybrid-Fully Loaded (Omaha) &#x0024;6500]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00s0s_gJkxBs9b0dq_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-30T14:38:16-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6063076670.html">
+<title><![CDATA[02 dodge ram lifted 4x4 (so omaha) &#x0024;5500]]></title>
+<link>http://omaha.craigslist.org/cto/6063076670.html</link>
+<description><![CDATA[Up for sale is a lifted 2002 dodge ram 1500 sport 
+Automatic 
+4.7L v8 
+113k 
+4x4 
+custom rear bumper 
+Afternarket headlights and taillights 
+Flip out dvd screen 
+Aftermarket speakers 
+New rear leaf spring 
+New front cv shafts + stub shafts and seals  [...]]]></description>
+<dc:date>2017-03-30T05:25:42-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6063076670.html</dc:source>
+<dc:title><![CDATA[02 dodge ram lifted 4x4 (so omaha) &#x0024;5500]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00C0C_b6qjoWS5wd_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-30T05:25:42-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6066024467.html">
+<title><![CDATA[2002 Chevy Silverado Z71 (Omaha) &#x0024;7800]]></title>
+<link>http://omaha.craigslist.org/cto/6066024467.html</link>
+<description><![CDATA[I've got a 2002 Chevy Silverado Z71 for sale. It's in great shape. Haven't had a single problem with it. Runs great. Only 116K miles on it. Asking $7,800 for it. If interested, call Mark at 
+ <a href="/fb/oma/cto/6066024467" class="showcontact" title="click to show contact info">show contact info</a>
+]]></description>
+<dc:date>2017-03-29T21:02:25-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6066024467.html</dc:source>
+<dc:title><![CDATA[2002 Chevy Silverado Z71 (Omaha) &#x0024;7800]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00F0F_jr0O9Qvec71_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-29T21:02:25-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6044065157.html">
+<title><![CDATA[2013 Ford F- 150 Standard Cab (Omaha) &#x0024;8450]]></title>
+<link>http://omaha.craigslist.org/cto/6044065157.html</link>
+<description><![CDATA[Great truck with 114,000. miles mostly highway. It has been used for light duty and personal with no issues. Breaks are less than 4 months old and tires still have good tread left. It is the standard cab with power window and locks and Bluetooth. Ask [...]]]></description>
+<dc:date>2017-03-29T17:08:13-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6044065157.html</dc:source>
+<dc:title><![CDATA[2013 Ford F- 150 Standard Cab (Omaha) &#x0024;8450]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00y0y_iJfAWDHVEm9_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-29T17:08:13-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6064439089.html">
+<title><![CDATA[2004 F150 XLT (Omaha) &#x0024;7500]]></title>
+<link>http://omaha.craigslist.org/cto/6064439089.html</link>
+<description><![CDATA[2004 F150 XLT Supercab. 
+4.6L, 4x4 Automatic, power locks and windows, heated mirrors, remote start, tonneau cover. 
+New tires with less than 3000 miles on them. Newer brakes. $7,500 OBO. Has some hail damage, I purchased it like that. Drivers seat b [...]]]></description>
+<dc:date>2017-03-28T19:59:22-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6064439089.html</dc:source>
+<dc:title><![CDATA[2004 F150 XLT (Omaha) &#x0024;7500]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00X0X_iqlgbyJoSVf_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-28T19:59:22-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6064173625.html">
+<title><![CDATA[2003 Ford F-150 (Blair, NE) &#x0024;8000]]></title>
+<link>http://omaha.craigslist.org/cto/6064173625.html</link>
+<description><![CDATA[I have a Ford F-150 with 114,000 miles that would be a excellent Work Truck. It does have a MANUAL Transmission with a minor exhaust leak, however, nothing major wrong with the engine and runs GREAT. I am asking $8,000.00 but am willing to move a lit [...]]]></description>
+<dc:date>2017-03-28T15:49:23-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6064173625.html</dc:source>
+<dc:title><![CDATA[2003 Ford F-150 (Blair, NE) &#x0024;8000]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2017-03-28T15:49:23-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6059827337.html">
+<title><![CDATA[2005 DAKOTA (Omaha) &#x0024;4700]]></title>
+<link>http://omaha.craigslist.org/cto/6059827337.html</link>
+<description><![CDATA[2005 dodge DAKOTA club cab Pick up. With only 113k miles. Everything works good. New tires. V6 ST. $4700 obo only in person local deals. No need help to sell. Thanks. 
+ <a href="/fb/oma/cto/6059827337" class="showcontact" title="click to show contact info">show contact info</a>
+]]></description>
+<dc:date>2017-03-28T08:34:53-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6059827337.html</dc:source>
+<dc:title><![CDATA[2005 DAKOTA (Omaha) &#x0024;4700]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00m0m_6EQscqLRxx5_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-28T08:34:53-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6046327486.html">
+<title><![CDATA[2008 Chevy Pickup Duramax utility truck (Bennington) &#x0024;7500]]></title>
+<link>http://omaha.craigslist.org/cto/6046327486.html</link>
+<description><![CDATA[I have a 2008 2500HD with the 6.6 Duramax and the Allison 6 speed transmission. Its an extended cab with 4 doors. This is a great work truck that comes loaded with a heavy duty utility box. Truck is in good shape, runs and drives good. Has new Magnaf [...]]]></description>
+<dc:date>2017-03-28T08:18:58-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6046327486.html</dc:source>
+<dc:title><![CDATA[2008 Chevy Pickup Duramax utility truck (Bennington) &#x0024;7500]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00b0b_eGcp9jAGQNV_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-28T08:18:58-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6063279956.html">
+<title><![CDATA[1995 f350 5 speed manual powerstroke 89,450 miles (blair ne) &#x0024;5500]]></title>
+<link>http://omaha.craigslist.org/cto/6063279956.html</link>
+<description><![CDATA[1995 f350 Powerstroke 
+89,640 actual miles 
+7.3 liter turbo charged Powerstroke 
+5 speed manual 
+2wd 
+Aluminum rims 
+Bench seat 
+LED clear cab lights 
+LED interior lights 
+LED dash cluster lights 
+New headlight bezels 
+Triple pod pillar gauges 
+Ts6 t [...]]]></description>
+<dc:date>2017-03-28T00:19:52-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6063279956.html</dc:source>
+<dc:title><![CDATA[1995 f350 5 speed manual powerstroke 89,450 miles (blair ne) &#x0024;5500]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00808_20udImebM1c_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-28T00:19:52-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6045151121.html">
+<title><![CDATA[2002 Ford F150 XLT (West Omaha) &#x0024;6000]]></title>
+<link>http://omaha.craigslist.org/cto/6045151121.html</link>
+<description><![CDATA[2002 Ford F150 XLT 
+4WD 
+127,000 Miles (Mainly Hwy Miles) 
+1 Owner 
+This was our father's truck. Selling because he passed away and we have no use for it. 
+Runs Great 
+Some rust as shown in pictures 
+Asking $6,000 OBO - Serious Inquiries Only - NO De [...]]]></description>
+<dc:date>2017-03-27T15:50:32-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6045151121.html</dc:source>
+<dc:title><![CDATA[2002 Ford F150 XLT (West Omaha) &#x0024;6000]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/01212_lwPSceccJyD_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-27T15:50:32-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6060415071.html">
+<title><![CDATA[Chevrolet (Omaha) &#x0024;8500]]></title>
+<link>http://omaha.craigslist.org/cto/6060415071.html</link>
+<description><![CDATA[Chevrolet avalanche 2002, North face edition. 103,000 miles. Serious inquiry only. Thanks.]]></description>
+<dc:date>2017-03-25T22:49:56-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6060415071.html</dc:source>
+<dc:title><![CDATA[Chevrolet (Omaha) &#x0024;8500]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00X0X_3kLLJZygHFU_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-25T22:49:56-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6051081817.html">
+<title><![CDATA[2002 GMC Sonoma &#x0024;3900]]></title>
+<link>http://omaha.craigslist.org/cto/6051081817.html</link>
+<description><![CDATA[Pick up is in very good condition. Very clean on the inside. CD player, A/C, long box, tilt/cruise. Runs great. Call or text 
+ <a href="/fb/oma/cto/6051081817" class="showcontact" title="click to show contact info">show contact info</a>
+if interested.]]></description>
+<dc:date>2017-03-25T21:29:35-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6051081817.html</dc:source>
+<dc:title><![CDATA[2002 GMC Sonoma &#x0024;3900]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00S0S_64Rn4ZXpDTw_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-25T21:29:35-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6059354885.html">
+<title><![CDATA[2002 Dodge Ram 2500 4X4 w/ Meyers snow plow &#x0024;7800]]></title>
+<link>http://omaha.craigslist.org/cto/6059354885.html</link>
+<description><![CDATA[2002 Dodge Ram 2500 4X4 with Meyers Snow Plow w/ 8ft. Blade, New Automatic Transmission with less than 4,000 miles,Has Miner Hail damage on Hood see picture, 5.9 360 Motor, Rust Free, very clean truck inside and out. Has 8 ft Box with bed line and Ne [...]]]></description>
+<dc:date>2017-03-25T09:32:07-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6059354885.html</dc:source>
+<dc:title><![CDATA[2002 Dodge Ram 2500 4X4 w/ Meyers snow plow &#x0024;7800]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00z0z_iM04RXmTEvS_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-25T09:32:07-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6046316646.html">
+<title><![CDATA[2006 Chevy Silverado 1500 4x4 Extended Cab With Topper (Omaha,Ne) &#x0024;8350]]></title>
+<link>http://omaha.craigslist.org/cto/6046316646.html</link>
+<description><![CDATA[Very Well Maintained Silverado 1500 Extended Cab With 6 1/2 Ft. Bed , 4.8l V8, 4x4, Aluminum Unicover Topper with Ladder Rack, Back Up Camera, Tinted Windows and 115,200 Miles. Electric Windows and Door Locks, Cruise Control, Air Conditioning, AM/FM  [...]]]></description>
+<dc:date>2017-03-24T21:17:24-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6046316646.html</dc:source>
+<dc:title><![CDATA[2006 Chevy Silverado 1500 4x4 Extended Cab With Topper (Omaha,Ne) &#x0024;8350]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00d0d_53zD9JWL48F_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-24T21:17:24-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6048266126.html">
+<title><![CDATA[2002 Dodge 3500 (Crescent Iowa) &#x0024;3400]]></title>
+<link>http://omaha.craigslist.org/cto/6048266126.html</link>
+<description><![CDATA[2002 dodge 3500 360v8 gas 2wd. Clean title, 105,500 miles, minimal rust, runs and drives great! New rear tires and good front ones, Cold A/C, clean title. Has a pipe rack and a fuel transfer tank. Service body needs some work but is ready to go to wo [...]]]></description>
+<dc:date>2017-03-24T10:31:41-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6048266126.html</dc:source>
+<dc:title><![CDATA[2002 Dodge 3500 (Crescent Iowa) &#x0024;3400]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00L0L_2S4egpGX0EW_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-24T10:31:41-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6054007179.html">
+<title><![CDATA[2011 Chevrolet Chevy 1500 Silverado (Louisville) &#x0024;8500]]></title>
+<link>http://omaha.craigslist.org/cto/6054007179.html</link>
+<description><![CDATA[2011 Chevrolet Silverado 2WD work truck. This truck has 90,675 miles on it, and is in good condition. It has been used as a plumbing truck since it was brand new, so it has some minor dings, and a crack in the windshield, but nothing serious. It has  [...]]]></description>
+<dc:date>2017-03-21T14:21:29-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6054007179.html</dc:source>
+<dc:title><![CDATA[2011 Chevrolet Chevy 1500 Silverado (Louisville) &#x0024;8500]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00v0v_kOXFpeQKi5P_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-21T14:21:29-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6051375941.html">
+<title><![CDATA[2015 ram 2500 (Lavista) &#x0024;30]]></title>
+<link>http://omaha.craigslist.org/cto/6051375941.html</link>
+<description><![CDATA[Black 2015 ram 2500 4x4 long bed slt 6.4l hemi. 25k miles. Has muffler delete (have oem muffler). Bed liner with lifetime warranty from wood house. Tinted windows. This was a work truck. Minor dings on box. Will need tires. 30k obo thanks]]></description>
+<dc:date>2017-03-19T19:26:15-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6051375941.html</dc:source>
+<dc:title><![CDATA[2015 ram 2500 (Lavista) &#x0024;30]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00808_hjPCRbjEye2_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-19T19:26:15-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6046382568.html">
+<title><![CDATA[2006 dodge Dakota slt quad cab &#x0024;5000]]></title>
+<link>http://omaha.craigslist.org/cto/6046382568.html</link>
+<description><![CDATA[Ok folks I have a gift for you I have a 2006 dodge Dakota slt quad cab 100,000 miles I need to sell because I just purchased another truck, with a bigger bed on it my dodge didn't have the payload capacity to carry supplies, the truck runs excellent  [...]]]></description>
+<dc:date>2017-03-16T10:17:46-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6046382568.html</dc:source>
+<dc:title><![CDATA[2006 dodge Dakota slt quad cab &#x0024;5000]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/01515_sIimauLJqb_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-16T10:17:46-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6045499755.html">
+<title><![CDATA[2003 Chevy Silverado Z71 &#x0024;8000]]></title>
+<link>http://omaha.craigslist.org/cto/6045499755.html</link>
+<description><![CDATA[Red 2003 Chevy Silverado Z71 
+125,927 Miles 
+4WD 
+Black Topper with Yakima Luggage Rack on top &amp; Fishing Rod storage inside 
+Towing hitch 
+Well taken care of truck. 
+Asking $8000 
+Call or text Holly with questions, interest and offers.]]></description>
+<dc:date>2017-03-15T15:47:45-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6045499755.html</dc:source>
+<dc:title><![CDATA[2003 Chevy Silverado Z71 &#x0024;8000]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/01515_iAj3kMy249S_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-15T15:47:45-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6006466947.html">
+<title><![CDATA[2004 GMC Savana Cutaway G3500 - REDUCED PRICE (Bellevue) &#x0024;6000]]></title>
+<link>http://omaha.craigslist.org/cto/6006466947.html</link>
+<description><![CDATA[2004 GMC Savana Cutaway G3500 
+Working Tommy Gate 
+Runs Good 
+Low Miles 
+Serious inquiries only please.]]></description>
+<dc:date>2017-03-14T16:43:04-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6006466947.html</dc:source>
+<dc:title><![CDATA[2004 GMC Savana Cutaway G3500 - REDUCED PRICE (Bellevue) &#x0024;6000]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00A0A_6pYxJkONSee_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-14T16:43:04-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6037749352.html">
+<title><![CDATA[2003 Chevy S10 4x4 &#x0024;7000]]></title>
+<link>http://omaha.craigslist.org/cto/6037749352.html</link>
+<description><![CDATA[For sale is a 2003 Chevrolet S10 pickup. It's an SC model with automatic transmission, gray cloth interior, extended cab, 4x4, and only 80k miles. Truck is at Woodhouse.]]></description>
+<dc:date>2017-03-10T09:58:57-06:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6037749352.html</dc:source>
+<dc:title><![CDATA[2003 Chevy S10 4x4 &#x0024;7000]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00p0p_6HEOm9O3eTp_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-10T09:58:57-06:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6036404127.html">
+<title><![CDATA[2002 Chevy Avalanche L71 1500 (papillion) &#x0024;9000]]></title>
+<link>http://omaha.craigslist.org/cto/6036404127.html</link>
+<description><![CDATA[Great truck in good condition. Has minor scratch next to gas hatch, as well as light rust on each rear wheel well and lastly minor paint deterioration (about 2 inches or so) on the top of the exterior of the rear passenger door. This truck has only h [...]]]></description>
+<dc:date>2017-03-09T10:27:45-06:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6036404127.html</dc:source>
+<dc:title><![CDATA[2002 Chevy Avalanche L71 1500 (papillion) &#x0024;9000]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00S0S_cwZJU0SFIJ0_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-09T10:27:45-06:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6026997192.html">
+<title><![CDATA[Ford F-150 2006 5.4 Liter Truck (Council Bluffs) &#x0024;7000]]></title>
+<link>http://omaha.craigslist.org/cto/6026997192.html</link>
+<description><![CDATA[I am selling my 2006 Ford F-150 5.4 liter Truck. 123,000 miles. Non-smoker. New Clutch and rear end. New exhaust system. New battery. Nice stereo system with subwoofer. Has alarm system. Air, Heat works great. 4 X 4 works great Includes $500 Topper . [...]]]></description>
+<dc:date>2017-03-07T18:44:21-06:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6026997192.html</dc:source>
+<dc:title><![CDATA[Ford F-150 2006 5.4 Liter Truck (Council Bluffs) &#x0024;7000]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00r0r_8t9wgnNTMPv_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-07T18:44:21-06:00</dcterms:issued>
+</item>
+<item rdf:about="http://omaha.craigslist.org/cto/6028632073.html">
+<title><![CDATA[2002 ford f250 4x4 115k (omaha) &#x0024;6000]]></title>
+<link>http://omaha.craigslist.org/cto/6028632073.html</link>
+<description><![CDATA[2002 ford f250 xlt with western straight blade. It has 115000 miles is a spare truck for the business and did residential driveways in the winter. The truck does have rust and dents not here to waste anyone's time that is the flaws of the truck. It r [...]]]></description>
+<dc:date>2017-03-03T21:11:42-06:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>copyright 2017 craiglist</dc:rights>
+<dc:source>http://omaha.craigslist.org/cto/6028632073.html</dc:source>
+<dc:title><![CDATA[2002 ford f250 4x4 115k (omaha) &#x0024;6000]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="https://images.craigslist.org/00L0L_ijmGWagf1ou_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2017-03-03T21:11:42-06:00</dcterms:issued>
+</item>
+</rdf:RDF>
