@@ -32,7 +32,7 @@ for url in sys.argv[1:]:
         cursor.execute("""INSERT INTO searches (url) VALUES (?)""", (url,))
         search_id = cursor.lastrowid
     else:
-        search_id = search_id[0]
+        search_id = search_id[0][0]
 
     # Read from test file
     # file = open('trucks.xml', 'r')
@@ -81,7 +81,7 @@ for url in sys.argv[1:]:
             print("Inserting ", link)
 
             try:
-                print(title, '\n', date, '\n', link, '\n', description)
+                print(link, '\n', search_id, '\n', title, '\n', date, '\n', link, '\n', description)
                 cursor.execute("""INSERT INTO items (link, search_id, title, description, date) VALUES (?, ?, ?, ?, ?)""",
                                (link, search_id, title, description, date))
                 new_results.append((title, link, date, description))
