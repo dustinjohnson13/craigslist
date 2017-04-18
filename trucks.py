@@ -1,8 +1,8 @@
 import html
 import os
-import sys
 import smtplib
 import sqlite3
+import sys
 import traceback
 import urllib.request
 import xml.etree.ElementTree as etree
@@ -21,8 +21,12 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS searches
 cursor.execute('''CREATE UNIQUE INDEX IF NOT EXISTS url_idx ON searches (url)''')
 
 cursor.execute('''CREATE TABLE IF NOT EXISTS items
-             (link TEXT, search_id INTEGER, title TEXT, date TEXT, description TEXT)''')
-cursor.execute('''CREATE UNIQUE INDEX IF NOT EXISTS link_idx ON items (link)''')
+             (id INTEGER PRIMARY KEY AUTOINCREMENT, link TEXT, version INTEGER, search_id INTEGER)''')
+cursor.execute('''CREATE UNIQUE INDEX IF NOT EXISTS link_version_idx ON items (link, version)''')
+
+cursor.execute('''CREATE TABLE IF NOT EXISTS item_versions
+              (id INTEGER PRIMARY KEY AUTOINCREMENT, item_id INTEGER, title TEXT, date TEXT, description TEXT)''')
+cursor.execute('''CREATE UNIQUE INDEX IF NOT EXISTS item_id_idx ON item_versions (item_id)''')
 
 for url in sys.argv[1:]:
     cursor.execute('SELECT id FROM searches WHERE url=?', (url,))
@@ -63,38 +67,75 @@ for url in sys.argv[1:]:
     # <dcterms:issued>2017-03-19T19:26:15-05:00</dcterms:issued>
     # </item>
     new_results = []
+    updated_results = []
     for item in root.findall('{http://purl.org/rss/1.0/}item'):
         title = html.unescape(item.find('{http://purl.org/rss/1.0/}title').text)
-        dateAsString = item.find('{http://purl.org/dc/elements/1.1/}date').text
-        # Remove colon it UTC offset
-        dateAsString = dateAsString[:22] + dateAsString[23:]
+        dateForItem = item.find('{http://purl.org/dc/elements/1.1/}date').text
+        # Remove colon in UTC offset
+        dateAsString = dateForItem[:22] + dateForItem[23:]
         date = datetime.strptime(dateAsString, "%Y-%m-%dT%H:%M:%S%z")
         # Element
         description = html.unescape(item.find('{http://purl.org/rss/1.0/}description').text)
         # Attribute
         link = item.get('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about')
 
-        cursor.execute('SELECT count(*)  FROM items WHERE link=?', (link,))
-        existingCount = cursor.fetchone()[0]
+        cursor.execute('SELECT MAX(id) FROM items WHERE link=?', (link,))
+        mostRecentItem = cursor.fetchone()[0]
 
-        if (existingCount == 0):
+        version = -1
+        if (mostRecentItem is None):
             print("Inserting ", link)
+            version = 1
+            new_results.append((title, link, date, description))
 
+        else:
+            cursor.execute('SELECT title, description, date FROM item_versions WHERE id=?', (mostRecentItem,))
+            existingVersionRow = cursor.fetchall()
+            existing_version = existingVersionRow[0]
+            existingTitle = existing_version[0]
+            existingDate = existing_version[2]
+            existingDescription = existing_version[1]
+
+            # Modify the date string to match the database format
+            dateForComparison = dateForItem[:10] + ' ' + dateForItem[11:]
+
+            if ((existingTitle, existingDescription, existingDate) != (title, description, dateForComparison)):
+                print("Updating ", link)
+                version = mostRecentItem + 1
+                updated_results.append((" (OLD) " + existingTitle, link, existingDate, existingDescription))
+                updated_results.append((title, link, date, description))
+
+        if (version != -1):
             try:
                 print(link, '\n', search_id, '\n', title, '\n', date, '\n', link, '\n', description)
-                cursor.execute("""INSERT INTO items (link, search_id, title, description, date) VALUES (?, ?, ?, ?, ?)""",
-                               (link, search_id, title, description, date))
-                new_results.append((title, link, date, description))
+                cursor.execute("""INSERT INTO items (link, version, search_id) VALUES (?, ?, ?)""",
+                               (link, version, search_id))
+
+                item_id = cursor.lastrowid
+
+                cursor.execute("""INSERT INTO item_versions (item_id, title, description, date) VALUES (?, ?, ?, ?)""",
+                               (item_id, title, description, date))
                 conn.commit()
             except Exception:
                 conn.rollback()
                 print(traceback.format_exc())
-        else:
-            print(link, " already exists")
 
-    if (len(new_results) > 0):
-        plainMessage = "New Results (" + url + "):\n\n"
-        htmlMessage = '\n<html>\n<h2>' + url + '</h2>\n' \
+    send_email = len(new_results) > 0 or len(updated_results) > 0
+
+    htmlMessage = '\n<html>\n<h2>' + url + '</h2>\n'
+    for results in (new_results, updated_results):
+
+        if len(results) == 0:
+            continue
+
+        if results == new_results:
+            plainMessage = "\n\nNew Results (" + url + "):\n\n"
+            htmlMessage = htmlMessage + '<h4>New Results<h4>\n'
+        else:
+            plainMessage = "\n\nUpdated Results (" + url + "):\n\n"
+            htmlMessage = htmlMessage + '<h4>Updated Results<h4>\n'
+
+        htmlMessage = htmlMessage + \
                       '<table><thead>\n' \
                       '<th>Title</th>\n' \
                       '<th>Date</th>\n' \
@@ -102,16 +143,19 @@ for url in sys.argv[1:]:
                       '</thead>\n' \
                       '<tbody>\n'
 
-        for result in new_results:
+        for result in results:
             plainMessage = plainMessage + str(result) + '\n'
             htmlMessage = htmlMessage + '<tr>\n' \
                                         '<td><a href="' + result[1] + '">' + result[0] + '</a></td>\n' \
-                                                                                         '<td>' + str(result[2]) + '</td>\n' \
-                                                                                                                   '<td>' + \
-                          result[3] + '</td>\n' \
-                                      '</tr>\n'
+                                        '<td>' + str(result[2]) + '</td>\n' \
+                                        '<td>' + result[3] + '</td>\n' \
+                                        '</tr>\n'
 
-        htmlMessage = htmlMessage + "</tbody></table></html>"
+        htmlMessage = htmlMessage + "</tbody></table>"
+
+    htmlMessage = htmlMessage + '</html>'
+
+    if send_email:
 
         print('Sending email with:\n' + htmlMessage)
 
@@ -124,7 +168,7 @@ for url in sys.argv[1:]:
 
         # Create message container - the correct MIME type is multipart/alternative.
         msg = MIMEMultipart('alternative')
-        msg['Subject'] = "New Craigslist Results"
+        msg['Subject'] = "Craigslist Results"
         msg['From'] = me
         msg['To'] = me
 
