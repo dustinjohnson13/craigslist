@@ -1,6 +1,7 @@
 import sys
 import traceback
 import urllib.request
+import requests
 
 import os
 
@@ -21,10 +22,10 @@ for url in sys.argv[1:]:
     # file.close()
 
     # Live retrieval
-    xml = urllib.request.urlopen(url).read()
+    xml = requests.get(url).text
 
     # To write to a file uncomment
-    # file = open('trucks.xml', 'wb')
+    # file = open('new.xml', 'w')
     # file.write(xml)
     # file.close()
 
