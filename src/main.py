@@ -1,14 +1,15 @@
+import datetime
 import sys
 import traceback
-import urllib.request
-import requests
 
 import os
+import requests
 
 from Db import Db
+from Domain import Email
+from EmailFormatter import EmailFormatter
 from Mailer import Mailer
 from RssParser import RssParser
-from EmailFormatter import EmailFormatter
 
 db = Db()
 db.initialize()
@@ -57,15 +58,11 @@ for url in sys.argv[1:]:
             dateForComparison = str(date)
 
             if existing_version != item:
-                print("Updating ", link)
                 version = mostRecentItem + 1
 
                 existing_version.title = "(OLD) " + existing_version.title
                 updated_results.append(existing_version)
                 updated_results.append(item)
-
-            else:
-                print("Not Updating ", link)
 
         if version != -1:
             try:
@@ -76,7 +73,6 @@ for url in sys.argv[1:]:
     send_email = len(new_results) > 0 or len(updated_results) > 0
 
     if send_email:
-
         email_formatter = EmailFormatter(url)
         email_formatter.add_new_items(new_results)
         email_formatter.add_updated_items(updated_results)
@@ -84,15 +80,22 @@ for url in sys.argv[1:]:
         htmlMessage = email_formatter.html_message()
         plainMessage = email_formatter.plain_message()
 
-        print('Sending email with:\n  html: ' + htmlMessage + '\n  plain: ' + plainMessage)
+        email = Email(None, htmlMessage, plainMessage, None)
+        db.save_email(email)
 
-        me = "dustinjohnson13@gmail.com"
-        email_password = os.environ['EMAIL_PASSWORD']
+    emails = db.unsent_emails()
+    me = "dustinjohnson13@gmail.com"
+    email_password = os.environ['EMAIL_PASSWORD']
+    mailer = Mailer()
 
-        mailer = Mailer()
+    for email in emails:
+        print('Sending email with:\n  html: ' + email.html + '\n  plain: ' + email.plain)
+
         mailer.send_email('smtp.gmail.com', 587, me, email_password, me, me,
-                          "Craigslist Results", htmlMessage, plainMessage)
-    else:
-        print('Not sending email')
+                          "Craigslist Results", email.html, email.plain)
+
+        email.sent = datetime.datetime.now()
+
+        db.save_email(email)
 
 db.close()

@@ -1,6 +1,7 @@
 import sqlite3
 from datetime import datetime
 
+from Domain import Email
 from Domain import Item
 
 
@@ -22,6 +23,9 @@ class Db:
         self.cursor.execute('''CREATE TABLE IF NOT EXISTS item_versions
                       (id INTEGER PRIMARY KEY AUTOINCREMENT, item_id INTEGER, title TEXT, date TEXT, description TEXT)''')
         self.cursor.execute('''CREATE UNIQUE INDEX IF NOT EXISTS item_id_idx ON item_versions (item_id)''')
+
+        self.cursor.execute('''CREATE TABLE IF NOT EXISTS search_emails
+                      (id INTEGER PRIMARY KEY AUTOINCREMENT, html TEXT, plain TEXT, sent TEXT)''')
 
     def close(self):
         self.cursor.close()
@@ -75,3 +79,42 @@ class Db:
         except Exception:
             self.conn.rollback()
             raise
+
+    def save_email(self, email):
+        try:
+            if (email.id is None):
+                self.cursor.execute("""INSERT INTO search_emails (html, plain, sent) VALUES (?, ?, ?)""",
+                                    (email.html, email.plain, email.sent))
+            else:
+                self.cursor.execute("""UPDATE search_emails SET sent = ? WHERE id = ?""",
+                                    (email.sent, email.id))
+
+            self.conn.commit()
+        except Exception:
+            self.conn.rollback()
+            raise
+
+    def unsent_emails(self):
+        self.cursor.execute('SELECT id, html, plain, sent ' \
+                            'FROM search_emails ' \
+                            'WHERE sent IS NULL')
+
+        rows = self.cursor.fetchall()
+
+        results = []
+        for row in rows:
+            # Strip the colon out of the date string
+            date_db_string = row[3]
+
+            if date_db_string is None:
+                sent = None
+            else:
+                date_db_string = date_db_string[:22] + date_db_string[23:]
+                sent = datetime.strptime(date_db_string, "%Y-%m-%d %H:%M:%S%z")
+
+            id = row[0]
+            html = row[1]
+            plain = row[2]
+            results.append(Email(id, html, plain, sent))
+
+        return results
