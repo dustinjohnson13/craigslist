@@ -30,8 +30,14 @@ class RssParser:
             # Remove colon in UTC offset
             dateAsString = dateForItem[:22] + dateForItem[23:]
             date = datetime.strptime(dateAsString, "%Y-%m-%dT%H:%M:%S%z")
+
             # Element
-            description = html.unescape(item.find('{http://purl.org/rss/1.0/}description').text)
+            descriptionElement = item.find('{http://purl.org/rss/1.0/}description')
+            if descriptionElement is None:
+                description = ''
+            else:
+                description = html.unescape(descriptionElement.text)
+
             # Attribute
             link = item.get('{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about')
 
